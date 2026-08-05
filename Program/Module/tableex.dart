@@ -1,0 +1,11 @@
+import 'dart:io';
+
+void main() {
+  print("Enter Value:");
+  var num=int.parse(stdin.readLineSync().toString());
+
+  for (int i = 1; i <= 10; i++) {
+    var ans = num * i;
+    print("$num*$i=$ans");
+  }
+}
