@@ -1,0 +1,36 @@
+3.Pick any app you use daily (like Zomato, Instagram, or Flipkart) and write a short feature request as if you were the product manager. 
+Then, briefly describe which team members (designer, backend, mobile developer, tester) would be involved in delivering this feature and 
+what each would do.
+
+Feature Request for Instagram
+Feature Request
+
+App:Instagram
+
+Feature Name: Scheduled Story Posting
+
+As a Product Manager, I would introduce a Scheduled Story Posting feature. Users can create a Story and choose a future date and time for 
+it to be posted automatically. This would be useful for students, creators and businesses who want to post at the right time without 
+opening the app later.
+
+Why this feature is useful:
+
+=>Saves time by scheduling Stories in advance.
+
+=>Helps creators maintain a regular posting schedule.
+
+=>Allows businesses to post promotional content at the best time.
+
+Team Members Involved
+
+Team Member                  What they would do
+
+Product Manager          =>  Defines the feature, collects user feedback, and coordinates the team.
+
+UI/UX Designer           =>  Designs the schedule button, date & time picker, and confirmation screen.
+
+Backend/API Developer    =>  Builds the server logic to save scheduled Stories and publish them automatically at the selected time.
+
+Mobile Developer         =>  Implements the feature in the Instagram app and connects it with backend APIs.
+
+Tester (QA)              =>  Tests scheduling, automatic posting, notifications, and fixes bugs before release.
