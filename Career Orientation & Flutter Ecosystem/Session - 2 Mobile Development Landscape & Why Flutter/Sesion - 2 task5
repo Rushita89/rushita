@@ -1,0 +1,100 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          title: const Text("Spotify Music Card"),
+          backgroundColor: Colors.green,
+        ),
+        body: const Center(
+          child: MusicCard(),
+        ),
+      ),
+    );
+  }
+}
+
+class MusicCard extends StatelessWidget {
+  const MusicCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      color: Colors.grey[900],
+      elevation: 8,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Image.network(
+                "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400",
+                width: 220,
+                height: 220,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(height: 15),
+
+            const Text(
+              "songname",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            const SizedBox(height: 5),
+
+            const Text(
+              "artistname",
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: 16,
+              ),
+            ),
+
+            const SizedBox(height: 15),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Icon(
+                  Icons.music_note,
+                  color: Colors.green,
+                  size: 30,
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                  ),
+                  icon: const Icon(Icons.play_arrow),
+                  label: const Text("Play"),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
