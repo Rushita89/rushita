@@ -1,0 +1,31 @@
+Scaffold
+ └── Center
+      └── Card
+           └── Column
+                ├── Image (Movie Poster)
+                ├── Text (Movie Name)
+                ├── Row
+                │    ├── Icon (Location)
+                │    └── Text (Cinema Name)
+                ├── Text (Date & Time)
+                └── ElevatedButton (Book Ticket)
+
+Explanation:
+
+=>Scaffold – Creates the main screen.
+
+=>Center – Places the ticket card in the center.
+
+=>Card – Gives the movie ticket a card-like appearance.
+
+=>Column – Arranges all widgets vertically.
+
+=>Image – Displays the movie poster.
+
+=>Text – Shows the movie name.
+
+=>Row – Displays the location icon and cinema name together.
+
+=>Text – Shows the show date and time.
+
+=>ElevatedButton – Displays a Book Ticket button.
