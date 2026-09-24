@@ -1,0 +1,35 @@
+2.Draw a simple diagram (on paper or using any online tool) showing how a mobile app team is structured in a typical company, including at 
+least: mobile developer, designer, backend/API developer, tester, and product manager.
+
+                           ┌─────────────────────────────────┐
+                           │        PRODUCT MANAGER          │
+                           │ • Plans project goals           │
+                           │ • Prioritizes features          │
+                           │ • Coordinates the team          │
+                           └───────────────┬─────────────────┘
+                                           │
+        ┌──────────────────────────────────┼──────────────────────────────────┐
+        │                                  │                                  │
+        │                                  │                                  │
+┌──────────────────────┐         ┌──────────────────────┐         ┌──────────────────────┐
+│   MOBILE DEVELOPER   │         │    UI/UX DESIGNER    │         │ BACKEND/API DEVELOPER│
+│ • Flutter            │         │ • Wireframes         │         │ • REST APIs          │
+│ • Dart               │         │ • App Screens        │         │ • Database           │
+│ • Mobile Features    │         │ • User Experience    │         │ • Authentication     │
+└──────────┬───────────┘         └──────────┬───────────┘         └──────────┬───────────┘
+           │                                │                                │
+           └──────────────────────┬─────────┴─────────┬──────────────────────┘
+                                  │                   │
+                                  ▼                   ▼
+                    ┌────────────────────────────────────────┐
+                    │        FLUTTER MOBILE APPLICATION       │
+                    │   Android & iOS App (Final Product)     │
+                    └───────────────────┬─────────────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────────┐
+                         │         TESTER (QA)             │
+                         │ • Tests all features            │
+                         │ • Finds and reports bugs        │
+                         │ • Ensures app quality           │
+                         └─────────────────────────────────┘
